@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>VALIDATION FORM</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Registration form-->
+        <div class="container">
+            <div class = "form-box">
+                <form action ="/myaction.php" name = "myForm" onsubmit="return validateForm()" method="post" id="form">
+                    <h2>Register</h2>
+                    <div class="input-box" id = "name">
+                        <input type ="text" name ="fname" required placeholder="Username"><span class ="formerror"></span>
+                    </div>
+                    <div class="input-box" id ="email">
+                        <input type ="email" name ="femail" required placeholder="Email"><span class ="formerror"></span>
+                    </div>
+                    <div class="input-box" id="password">
+                        <input type ="password" name ="fpass" required placeholder="Password"><span class ="formerror"></span>
+                    </div>
+                    <div class="input-box" id = "Cpassword">
+                        <input type ="password" name ="fcpass"  placeholder="Confirm Password"><span class ="formerror"></span>
+                    </div>
+                    <div class="button">
+                        <input type ="submit" class="btn" value ="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--For pop up value-->
+        <script defer src="index.js">
+            
+        </script>
+       
+    </body>
+</html>
